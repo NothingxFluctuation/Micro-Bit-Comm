@@ -31,7 +31,7 @@ There are several intricacies in the timing that can be customised in MorseBit.h
 5. You should now have indexes to the Morse Code lookup table to convert to characters
 
 
-##State Diagram
+## State Diagram
 
 ![](img/morseState.png)
 
