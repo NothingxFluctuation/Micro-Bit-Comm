@@ -1,4 +1,4 @@
-This challenge implements a simple communication protocol that transmits data between 2 BBC Micro:bit devices
+A simple communication protocol that transmits data between 2 BBC Micro:bit devices
 
 
 ## Overview
@@ -29,6 +29,12 @@ There are several intricacies in the timing that can be customised in MorseBit.h
 3. The first packet recieved should always be the number of packets to follow. This will also be used as the key for the XOR cipher if the packet is encrypted
 4. Decrypt the packet using an XOR cipher. The key sohuld be the first packet recieved (message size)
 5. You should now have indexes to the Morse Code lookup table to convert to characters
+
+
+##State Diagram
+
+![](img/morseState.png)
+
 
 
 ## Instructions
