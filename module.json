@@ -1,0 +1,13 @@
+{
+  "name": "morsebit-protocol",
+  "version": "0.0.1",
+  "description": "A simple, single-wire communication protocol that transmits data between 2 BBC Micro:Bit devices.",
+  "author": [
+    "Ruby","Shabnam"
+  ],
+  "license": "Free",
+  "dependencies": {
+    "microbit": "lancaster-university/microbit"
+  },
+  "bin": "./src"
+}
