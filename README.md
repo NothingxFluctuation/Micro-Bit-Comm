@@ -10,6 +10,19 @@ A TX user inputs data via button presses in Morse Code and the RX user recieves 
 There are several intricacies in the timing that can be customised in MorseBit.h (basically things like timing for button presses).
 
 
+
+## Morse:ßit Protocol
+
+The Morse:ßit Protocol is a simple, single-wire communication protocol that trasmits data between 2 devices. This implementation has done it using GPIO pins on BBC Micro:bit devices. It uses Morse Code and a Morse Code lookup table to tx/rx data from user to user.
+
+### MorseBit Messages
+A MorseBit message is simply a series of MorseBit packets. The first packet in a MorseBit message will always be the number of packets in it's message and the XOR cipher key to decrypting the following packets.
+
+### MorseBit Package
+A MorseBit packet is a simple 6-bit integer. It's only 6-bits because the lookup table has 63 indexes and 111111 = 63.
+
+
+
 ### TX over MorseBit:
 1. User inputs message via Morse Code presses (set GPIO pin HI whilst this is going on to signal incoming message to the RX user)
 2. Morse code is then converted to the Morse Code character's corresponding indexes in the Morse Code lookup table
